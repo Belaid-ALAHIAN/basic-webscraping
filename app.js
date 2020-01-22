@@ -24,7 +24,7 @@ function scrapePage () {
 
                     const stockStat = $(element)
                     .children('.product_price')
-                    .find(".instock").text();
+                    .find(".instock").text().trim();
 
                     books.push({title,price,stockStat});
  
